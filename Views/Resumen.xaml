@@ -119,7 +119,7 @@
         </Grid>
 
         <Button x:Name="btnCerrar"
-             Text="Resumen"
+             Text="Cerrar"
              Clicked="btnCerrar_Clicked"/>
 
     </VerticalStackLayout>
