@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcaillaguaExamen.Views.Login"
+             BackgroundColor="White">
+
+    <ScrollView>
+    <VerticalStackLayout
+        Margin="25,20"
+        Spacing="20">
+        
+        <Label 
+            Text="Login"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"
+            TextColor="Red"/>
+        
+        <Image Source="uisrael.jpg"
+               MaximumWidthRequest="200"
+               HorizontalOptions="Center"/>
+       
+        <Grid Margin="10,20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Label Text="estudiante2025"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   TextColor="Black"/>
+            <Label Text="moviles"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    TextColor="Black"/>
+            
+            <Label Text="uisrael"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   TextColor="Black"/>
+            <Label Text="2025"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    TextColor="Black"/>
+            
+            <Label Text="sistemas"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   TextColor="Black"/>
+            <Label Text="2025_1"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   TextColor="Black"/>
+        </Grid>
+
+        <Grid Margin="10,20">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Entry
+                x:Name="txtUsuario"
+                Placeholder="Ingrese su usuario"
+			    Grid.Row="0"
+			    Grid.Column="1"
+                Background="Gray"
+                TextColor="black"/>
+            <Entry
+                x:Name="txtContrasena"
+                Placeholder="Ingrese su Contraseña"
+                IsPassword="True"
+			    Grid.Row="1"
+                Grid.Column="1"
+                Background="Gray"
+                TextColor="Black"/>
+            
+            <Label x:Name="lblusuario"
+                   Text="USARIO"
+			       Grid.Row="0"
+			       Grid.Column="0"
+                   TextColor="Black"/>
+            <Label x:Name="lblContrasena"
+                   Text="CONTRASEÑA"
+			       Grid.Row="1"
+			       Grid.Column="0"
+                   TextColor="Black"/>
+        </Grid>
+        <Button
+            x:Name="btnIniciar"
+            Text="Iniciar Sesión"
+            Clicked="btnIniciar_Clicked"
+            />
+
+            <Button
+            x:Name="btnAcerca"
+            Text="Acerca de"
+            Clicked="btnAcerca_Clicked"
+            />
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>

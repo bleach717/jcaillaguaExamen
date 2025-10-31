@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jcaillaguaExamen.Views.Registro"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label x:Name="lbluser"
+                   TextColor="Black"/>
+
+            <Label Text="REGISTRO"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   TextColor="Blue"
+                   FontSize="22"/>
+
+            <Grid Margin="10,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Nombre"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="Black"/>
+                <Entry x:Name="txtNombre"
+                       Placeholder="Ingresar Nombre"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       TextColor="Black"
+                       Background="Gray"/>
+
+                <Label Text="Apellido"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       TextColor="Black"/>
+                <Entry x:Name="txtApellido"
+                       Placeholder="Ingresar Apellido"
+                       Grid.Row="1"
+                       Grid.Column="1"
+                       TextColor="Black"
+                       Background="Gray"/>
+
+                
+                <Label Text="Voltiamperio VA"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       TextColor="Black"/>
+                <Picker x:Name="pVA"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        BackgroundColor="LightGray">
+                    <Picker.Items>
+                        <x:String>500</x:String>
+                        <x:String>750</x:String>
+                        <x:String>1000</x:String>
+                    </Picker.Items>
+                </Picker>
+            </Grid>
+
+
+            <Grid Margin="10,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+ 
+                <Label Text="Fecha"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="Black"/>
+                <DatePicker x:Name="dtpFecha"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            BackgroundColor="LightGray"/>
+
+                <Label Text="Ciudad"
+                       Grid.Row="1"
+                       Grid.Column="0"
+                       TextColor="Black"/>
+                <Picker x:Name="pCiudad"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="LightGray">
+                    <Picker.Items>
+                        <x:String>Quito</x:String>
+                        <x:String>Guayaquil</x:String>
+                        <x:String>Cuenca</x:String>
+                    </Picker.Items>
+                </Picker>
+
+
+                <Label Text="Monto Inicial"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       TextColor="Black"/>
+                <Entry Text="45"
+                       x:Name="txtMonto"
+                       Grid.Row="2"
+                       Grid.Column="1"
+                       TextColor="Black"
+                       IsEnabled="False"
+                       Background="Gray"/>
+
+                <Button x:Name="btnCalcular"
+                        Text="Calcular"
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Clicked="btnCalcular_Clicked"/>
+                
+                <Entry x:Name="txtCuota"
+                       Grid.Row="3"
+                       Grid.Column="1"
+                       TextColor="Black"
+                       IsEnabled="False"
+                       Background="Gray"/>
+            </Grid>
+            <Button x:Name="btnResumen"
+                        Text="Resumen"
+                        Grid.ColumnSpan="2"
+                        Margin="0,10,0,0"
+                        Clicked="btnResumen_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
