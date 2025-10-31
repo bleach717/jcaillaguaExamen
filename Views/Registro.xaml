@@ -17,49 +17,48 @@
                    FontSize="22"/>
 
             <Grid Margin="10,20">
+
                 <Grid.RowDefinitions>
                     <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition />
+
                 </Grid.RowDefinitions>
 
+               
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition  />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-
+               
                 <Label Text="Nombre"
-                       Grid.Row="0"
-                       Grid.Column="0"
+                       Grid.Row="0" Grid.Column="0"
+                       HorizontalOptions="Center"
                        TextColor="Black"/>
-                <Entry x:Name="txtNombre"
-                       Placeholder="Ingresar Nombre"
-                       Grid.Row="0"
-                       Grid.Column="1"
-                       TextColor="Black"
-                       Background="Gray"/>
-
                 <Label Text="Apellido"
-                       Grid.Row="1"
-                       Grid.Column="0"
+                       Grid.Row="0" Grid.Column="1"
+                       HorizontalOptions="Center"
                        TextColor="Black"/>
-                <Entry x:Name="txtApellido"
-                       Placeholder="Ingresar Apellido"
-                       Grid.Row="1"
-                       Grid.Column="1"
-                       TextColor="Black"
-                       Background="Gray"/>
+                <Label Text="Voltiamperio VA"
+                       Grid.Row="0" Grid.Column="2"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
 
                 
-                <Label Text="Voltiamperio VA"
-                       Grid.Row="2"
-                       Grid.Column="0"
-                       TextColor="Black"/>
+                <Entry x:Name="txtNombre"
+                       Grid.Row="1" Grid.Column="0"
+                       Placeholder="Ingresar Nombre"
+                       TextColor="Black"
+                       Background="Gray"/>
+                <Entry x:Name="txtApellido"
+                       Grid.Row="1" Grid.Column="1"
+                       Placeholder="Ingresar Apellido"
+                       TextColor="Black"
+                       Background="Gray"/>
                 <Picker x:Name="pVA"
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        BackgroundColor="LightGray">
+                    Grid.Row="1" Grid.Column="2"
+                    BackgroundColor="LightGray">
                     <Picker.Items>
                         <x:String>500</x:String>
                         <x:String>750</x:String>
@@ -67,6 +66,7 @@
                     </Picker.Items>
                 </Picker>
             </Grid>
+
 
 
             <Grid Margin="10,20">
